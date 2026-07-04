@@ -60,18 +60,111 @@ section h3 {
 .activity-card {
   margin-bottom: 15px;
   padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  border: 1px solid #e0e7ff;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffffff 0%, #f7f9ff 100%);
+  box-shadow: 0 4px 12px rgba(26, 35, 126, 0.08);
+}
+
+.activity-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
   color: #0066cc;
+}
+
+.availability-badge {
+  background-color: #e8f0fe;
+  color: #1a73e8;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.activity-description {
+  color: #555;
+  margin-bottom: 8px;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.participants-section h5 {
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 0.95rem;
+}
+
+.participants-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 10px;
+  background-color: #eef4ff;
+  color: #355c7d;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.participant-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.remove-participant-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.remove-participant-btn:hover {
+  background-color: #bfdbfe;
+  transform: scale(1.05);
+}
+
+.remove-participant-btn svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.participants-empty {
+  color: #777;
+  font-style: italic;
+  font-size: 0.95rem;
 }
 
 .form-group {
